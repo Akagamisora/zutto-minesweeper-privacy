@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>プライバシーポリシー / Privacy Policy — ずっとマインスイーパー / Zutto Minesweeper</title>
+    <meta
+      name="description"
+      content="ずっとマインスイーパー (Zutto Minesweeper) のプライバシーポリシー。Privacy policy for the Zutto Minesweeper iOS app."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-top: #222730;
+        --bg-bottom: #13161B;
+        --paper: #1C2029;
+        --surface: #272B34;
+        --ink: #E6E9F0;
+        --ink2: #B0B6C2;
+        --ink3: #7C8390;
+        --line: rgba(230, 233, 240, 0.08);
+        --line-strong: rgba(230, 233, 240, 0.16);
+        --accent: #E8765C;
+        --accent-deep: #F0907A;
+        --accent-soft: rgba(232, 118, 92, 0.16);
+        --blue: #6FA0F5;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+        background-attachment: fixed;
+        color: var(--ink);
+        font-family: "Zen Maru Gothic", "Hiragino Maru Gothic ProN",
+          "ヒラギノ丸ゴ ProN W4", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.8;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        min-height: 100vh;
+      }
+
+      .wrap {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 64px 24px 96px;
+      }
+
+      header.brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 40px;
+      }
+
+      .mark {
+        width: 40px;
+        height: 40px;
+        border-radius: 9px;
+        display: block;
+        object-fit: cover;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+      }
+
+      .brand-name {
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        color: var(--ink);
+      }
+
+      .lang-switch {
+        margin-left: auto;
+        display: flex;
+        gap: 8px;
+      }
+
+      .lang-switch a {
+        font-size: 12px;
+        color: var(--ink3);
+        text-decoration: none;
+        padding: 4px 10px;
+        border: 1px solid var(--line-strong);
+        border-radius: 999px;
+      }
+
+      .lang-switch a:hover {
+        color: var(--accent-deep);
+        border-color: var(--accent);
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: 500;
+        margin: 0 0 8px;
+        color: var(--ink);
+        letter-spacing: 0.02em;
+      }
+
+      .meta {
+        font-size: 13px;
+        color: var(--ink3);
+        margin-bottom: 40px;
+      }
+
+      h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 56px 0 16px;
+        color: var(--ink);
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      h3 {
+        font-size: 15px;
+        font-weight: 600;
+        margin: 32px 0 8px;
+        color: var(--ink);
+      }
+
+      p {
+        margin: 12px 0;
+        color: var(--ink2);
+      }
+
+      strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+
+      a {
+        color: var(--blue);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      a:hover {
+        color: var(--accent-deep);
+      }
+
+      ul {
+        padding-left: 1.2em;
+        color: var(--ink2);
+      }
+
+      li {
+        margin: 6px 0;
+      }
+
+      .divider {
+        height: 1px;
+        background: var(--line);
+        margin: 64px 0;
+        border: none;
+      }
+
+      footer {
+        margin-top: 80px;
+        padding-top: 24px;
+        border-top: 1px solid var(--line);
+        font-size: 12px;
+        color: var(--ink3);
+        text-align: center;
+      }
+
+      .contact {
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 20px 24px;
+        margin-top: 16px;
+      }
+
+      .contact a {
+        font-weight: 500;
+      }
+
+      /* Other apps section */
+      .other-apps {
+        margin-top: 96px;
+        padding-top: 32px;
+        border-top: 1px solid var(--line);
+      }
+
+      .other-title {
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        color: var(--ink3);
+        text-transform: uppercase;
+        margin: 0 0 20px;
+        padding: 0;
+        border: none;
+      }
+
+      .app-list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .app-card {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 14px 16px;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        text-decoration: none;
+        color: inherit;
+        transition: border-color 0.15s ease, transform 0.15s ease;
+      }
+
+      .app-card:hover {
+        border-color: var(--accent);
+        transform: translateY(-1px);
+      }
+
+      .app-card-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 11px;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+
+      .app-card-meta {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .app-card-name {
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--ink);
+        margin-bottom: 2px;
+      }
+
+      .app-card-desc {
+        font-size: 13px;
+        color: var(--ink3);
+        line-height: 1.5;
+      }
+
+      .app-card-arrow {
+        color: var(--ink3);
+        font-size: 18px;
+        flex-shrink: 0;
+      }
+
+      @media (max-width: 480px) {
+        .wrap {
+          padding: 40px 20px 64px;
+        }
+        h1 {
+          font-size: 24px;
+        }
+        h2 {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="brand">
+        <img
+          class="mark"
+          src="app-icon.png"
+          alt="ずっとマインスイーパー / Zutto Minesweeper アプリアイコン"
+          width="40"
+          height="40"
+        />
+        <span class="brand-name">ずっとマインスイーパー / Zutto Minesweeper</span>
+        <span class="lang-switch">
+          <a href="#ja">日本語</a>
+          <a href="#en">English</a>
+        </span>
+      </header>
+
+      <section id="ja">
+        <h1>プライバシーポリシー</h1>
+        <div class="meta">最終更新日：2026年6月19日</div>
+
+        <p>
+          このプライバシーポリシーは、 iOS
+          アプリケーション「ずっとマインスイーパー」 (以下「本アプリ」)
+          の利用に際してのデータの取扱いについて説明します。
+        </p>
+
+        <h2>1. 取り扱うデータ</h2>
+        <p>本アプリが扱うデータは以下に限られます：</p>
+        <ul>
+          <li>
+            <strong>ゲームの進行状況</strong>（盤面、操作履歴） —
+            端末内のメモリ上のみで処理。アプリを閉じれば消えます
+          </li>
+          <li>
+            <strong>最高連勝・ベストタイム</strong>（数値のみ） — 端末内
+            (UserDefaults) と iCloud Key-Value Store に保存
+          </li>
+          <li>
+            <strong>アプリ設定</strong>（テーマ、外観、オンボーディング完了フラグ）
+            — 端末内のみに保存
+          </li>
+        </ul>
+        <p>
+          ユーザー名、メールアドレス、位置情報、写真、連絡先など、
+          個人を特定できる情報は<strong>一切収集しません</strong>。
+        </p>
+
+        <h2>2. 第三者サービス：Google AdMob（広告）</h2>
+        <p>
+          本アプリは Google AdMob のバナー広告を画面下に 1 つ表示します。
+        </p>
+        <ul>
+          <li>
+            AdMob は広告配信のために、
+            デバイス識別子や使用状況の一部を Google に送信する場合があります
+          </li>
+          <li>
+            本アプリは、起動時に<strong>アプリトラッキング透明性（App Tracking
+            Transparency）のダイアログ</strong>を表示します。「許可」を選んだ場合に限り、
+            識別子の利用が AdMob に許可されパーソナライズ広告が配信されます。
+            「許可しない」を選んだ場合は、トラッキングなしの一般的な広告が表示されます
+          </li>
+          <li>
+            AdMob / Google のプライバシー方針は以下を参照：<a
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              rel="noopener"
+              >policies.google.com/privacy</a
+            >
+          </li>
+        </ul>
+
+        <h2>3. iCloud について</h2>
+        <p>
+          本アプリは、最高連勝とベストタイムを iCloud Key-Value Store
+          (NSUbiquitousKeyValueStore) に保存します。
+        </p>
+        <ul>
+          <li>
+            同期はあなたの Apple ID 配下でのみ行われ、
+            他のユーザーに見られることはありません
+          </li>
+          <li>
+            iCloud にサインインしていない場合は、端末内 (UserDefaults)
+            のみに保存されます
+          </li>
+          <li>同期される値は数値のみで、個人情報は含みません</li>
+        </ul>
+
+        <h2>4. その他のトラッキング</h2>
+        <p>
+          本アプリは、上記 2 項の AdMob 広告ネットワーク以外には、
+          ユーザーデータを第三者に提供しません。
+          解析 SDK・コンバージョン計測 SDK の類は使用していません。
+        </p>
+
+        <h2>5. データの削除</h2>
+        <p>
+          本アプリで保存されたデータを削除するには、次のいずれかの方法をお使いください：
+        </p>
+        <ul>
+          <li>
+            iOS の「設定 → 一般 → iPhone ストレージ」でアプリを削除する →
+            端末内のデータが消去されます
+          </li>
+          <li>
+            iCloud Key-Value Store のデータは Apple ID から個別管理可能です
+            (Apple のサポートをご参照ください)
+          </li>
+        </ul>
+
+        <h2>6. 子どものプライバシー</h2>
+        <p>
+          本アプリの対象年齢は 4+
+          ですが、子どもの個人情報を意図的に収集することはありません
+          (上記 1 項のとおり、そもそも個人情報を一切収集していません)。
+        </p>
+
+        <h2>7. ポリシーの変更</h2>
+        <p>
+          本ポリシーは将来変更される可能性があります。
+          重要な変更がある場合は本ページにて告知します。
+        </p>
+
+        <h2>8. お問い合わせ</h2>
+        <div class="contact">
+          本ポリシーまたは本アプリに関するご質問は、以下までご連絡ください：<br />
+          <a href="mailto:akagamisora@gmail.com">akagamisora@gmail.com</a>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <section id="en">
+        <h1>Privacy Policy</h1>
+        <div class="meta">Last Updated: June 19, 2026</div>
+
+        <p>
+          This privacy policy explains how data is handled when using the iOS
+          application "Zutto Minesweeper" (the "App").
+        </p>
+
+        <h2>1. Data Handled</h2>
+        <p>The App handles only the following data:</p>
+        <ul>
+          <li>
+            <strong>Game state</strong> (board, actions) — processed in-memory
+            only. Cleared when the App is closed
+          </li>
+          <li>
+            <strong>Longest streak and best time</strong> (numbers only) —
+            stored on-device (UserDefaults) and in iCloud Key-Value Store
+          </li>
+          <li>
+            <strong>App settings</strong> (theme, appearance, onboarding
+            completion flag) — stored on-device only
+          </li>
+        </ul>
+        <p>
+          No personally identifying information — such as your name, email,
+          location, photos, or contacts — is collected.
+        </p>
+
+        <h2>2. Third-Party Service: Google AdMob (Ads)</h2>
+        <p>
+          The App displays a single Google AdMob banner at the bottom of the
+          screen.
+        </p>
+        <ul>
+          <li>
+            AdMob may send device identifiers and usage information to Google
+            for ad delivery
+          </li>
+          <li>
+            On first launch, the App displays the
+            <strong>App Tracking Transparency dialog</strong>. If you choose
+            "Allow", identifiers are shared with AdMob and personalized ads may
+            be served. If you choose "Ask App Not to Track", non-personalized
+            ads are served instead
+          </li>
+          <li>
+            For AdMob / Google's privacy policy, see:
+            <a
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              rel="noopener"
+              >policies.google.com/privacy</a
+            >
+          </li>
+        </ul>
+
+        <h2>3. iCloud</h2>
+        <p>
+          The App stores longest streak and best time in iCloud Key-Value Store
+          (NSUbiquitousKeyValueStore).
+        </p>
+        <ul>
+          <li>
+            Sync happens only within your Apple ID — other users cannot see your
+            records
+          </li>
+          <li>
+            If you are not signed in to iCloud, records are stored on-device
+            (UserDefaults) only
+          </li>
+          <li>
+            Only numeric values are synced; no personal information is included
+          </li>
+        </ul>
+
+        <h2>4. No Other Tracking</h2>
+        <p>
+          The App does not share data with any third party other than the AdMob
+          network described above. No analytics SDKs or conversion-tracking SDKs
+          are used.
+        </p>
+
+        <h2>5. Deleting Your Data</h2>
+        <p>To delete data stored by the App, use one of the following:</p>
+        <ul>
+          <li>
+            Delete the App via "Settings → General → iPhone Storage" — clears
+            on-device data
+          </li>
+          <li>
+            iCloud Key-Value Store data can be managed individually from your
+            Apple ID (see Apple Support for details)
+          </li>
+        </ul>
+
+        <h2>6. Children's Privacy</h2>
+        <p>
+          The App is age-rated 4+, but no personal information is intentionally
+          collected from children (as Section 1 makes clear, no personal
+          information is collected from anyone).
+        </p>
+
+        <h2>7. Policy Changes</h2>
+        <p>
+          This policy may change. Any material change will be announced on this
+          page.
+        </p>
+
+        <h2>8. Contact</h2>
+        <div class="contact">
+          For questions about this policy, please email:<br />
+          <a href="mailto:akagamisora@gmail.com">akagamisora@gmail.com</a>
+        </div>
+      </section>
+
+      <!-- 他のアプリ：同じ作者の作品を発見できるように -->
+      <section class="other-apps">
+        <h2 class="other-title">Other apps by Akagamisora</h2>
+        <div class="app-list">
+          <a
+            class="app-card"
+            href="https://apps.apple.com/jp/app/%E3%81%B2%E3%81%A8%E3%81%93%E3%81%BE-%E5%86%99%E7%9C%9F%E3%81%A8%E4%B8%80%E8%A8%80%E3%81%AE%E6%97%A5%E8%A8%98/id6770953961"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="app-card-icon"
+              src="https://akagamisora.github.io/hitokoma-privacy/app-icon.png"
+              alt=""
+            />
+            <div class="app-card-meta">
+              <div class="app-card-name">ひとこま - 写真と一言の日記</div>
+              <div class="app-card-desc">
+                写真 1 枚と一言、地図で振り返るフォトログ
+              </div>
+            </div>
+            <span class="app-card-arrow">→</span>
+          </a>
+          <a
+            class="app-card"
+            href="https://akagamisora.github.io/mannaka-privacy/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="app-card-icon"
+              src="https://akagamisora.github.io/mannaka-privacy/app-icon.png"
+              alt=""
+            />
+            <div class="app-card-meta">
+              <div class="app-card-name">まんなか - みんなの中間駅</div>
+              <div class="app-card-desc">
+                参加者の最寄り駅から「ちょうど真ん中」の集合駅を提案
+              </div>
+            </div>
+            <span class="app-card-arrow">→</span>
+          </a>
+          <!--
+            他のアプリを追加するときはこのテンプレを複製：
+          <a class="app-card" href="..."><img class="app-card-icon" src="..." alt=""><div class="app-card-meta"><div class="app-card-name">App Name</div><div class="app-card-desc">Description</div></div><span class="app-card-arrow">→</span></a>
+          -->
+        </div>
+      </section>
+
+      <footer>© 2026 Sora Akagami</footer>
+    </div>
+  </body>
+</html>
